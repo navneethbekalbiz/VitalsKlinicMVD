@@ -4,10 +4,10 @@ import { Reveal } from './Reveal';
 import { Carousel, Card } from './ui/apple-cards-carousel';
 
 export const Experts: React.FC = () => {
-  
+
   const cards = DOCTORS.map((doctor, index) => (
-    <Card 
-      key={doctor.id} 
+    <Card
+      key={doctor.id}
       card={{
         src: doctor.image,
         title: doctor.name,
@@ -18,18 +18,19 @@ export const Experts: React.FC = () => {
               {doctor.name} is a leading expert in their field, bringing years of clinical experience and a passion for aesthetic excellence to Vitals Klinic.
             </p>
             <div className="p-6 bg-sand/30 rounded-2xl border border-obsidian/5">
-               <h4 className="font-display text-xl mb-4">Credentials & Expertise</h4>
-               <ul className="list-disc list-inside space-y-2 font-sans text-obsidian/70">
-                 <li>Board Certified Dermatologist</li>
-                 <li>10+ Years of Experience</li>
-                 <li>Specialized in {index === 0 ? "Aesthetic Procedures" : "Hair Restoration"}</li>
-                 <li>Member of International Dermatology Society</li>
-               </ul>
+              <h4 className="font-display text-xl mb-4">Credentials & Expertise</h4>
+              <ul className="list-disc list-inside space-y-2 font-sans text-obsidian/70">
+                <li>Board Certified Dermatologist</li>
+                <li>10+ Years of Experience</li>
+                <li>Specialized in {index === 0 ? "Aesthetic Procedures" : "Hair Restoration"}</li>
+                <li>Member of International Dermatology Society</li>
+              </ul>
             </div>
           </div>
         )
-      }} 
-      index={index} 
+      }}
+      index={index}
+      clickable={false}
     />
   ));
 
@@ -48,7 +49,7 @@ export const Experts: React.FC = () => {
       </div>
 
       <div className="w-full h-full">
-         <Carousel items={cards} />
+        <Carousel items={cards} />
       </div>
     </section>
   );

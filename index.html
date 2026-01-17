@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <title>Vitals Klinic | Luxury Dermatology</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              sand: '#F2F0EB',
-              cream: '#FFFFFF',
-              obsidian: '#121212',
-              gold: '#CFB53B',
-              charcoal: '#1F1F21',
-              platinum: '#EAEAEA'
-            },
-            fontFamily: {
-              serif: ['Cormorant Garamond', 'serif'],
-              display: ['Playfair Display', 'serif'],
-              sans: ['Montserrat', 'sans-serif'],
-            },
-            letterSpacing: {
-              'widest-plus': '0.2em',
-            },
-            backgroundImage: {
-              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            }
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>Vitals Klinic | Luxury Dermatology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: '#F2F0EB',
+            cream: '#FFFFFF',
+            obsidian: '#121212',
+            gold: '#CFB53B',
+            charcoal: '#1F1F21',
+            platinum: '#EAEAEA'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            display: ['Playfair Display', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          letterSpacing: {
+            'widest-plus': '0.2em',
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
           }
         }
       }
-    </script>
-    <style>
-      /* Custom Scrollbar for horizontal scrolling sections */
-      .hide-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      body {
-        background-color: #F2F0EB;
-        color: #121212;
-      }
-      ::selection {
-        background-color: #121212;
-        color: #FFFFFF;
-      }
-    </style>
+    }
+  </script>
+  <style>
+    /* Custom Scrollbar for horizontal scrolling sections */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Global Scrollbar Styling */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F2F0EB;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #CFB53B;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #121212;
+    }
+
+    body {
+      background-color: #F2F0EB;
+      color: #121212;
+    }
+
+    .text-balance {
+      text-wrap: balance;
+    }
+
+    ::selection {
+      background-color: #CFB53B;
+      color: #FFFFFF;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -67,7 +95,10 @@
 }
 </script>
 </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

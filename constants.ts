@@ -1,4 +1,10 @@
 import { Doctor, NavItem, TreatmentItem, TestimonialData, StatItem } from './types';
+import aestheticDerma from './components/ASSETS/HERO/Aesthethic Derma.jpg';
+import hairRestore from './components/ASSETS/HERO/HairRestore.jpg';
+import acneRevision from './components/ASSETS/HERO/acnerevision.jpg';
+import hairTransplant from './components/ASSETS/HERO/hairtrans.jpg';
+import fillers from './components/ASSETS/HERO/fillers.jpg';
+import laserReduce from './components/ASSETS/HERO/laserreduce.jpg';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Treatments', href: '#treatments' },
@@ -11,13 +17,13 @@ export const SPECIALIZATIONS = [
   {
     title: "Clinical & Aesthetic Dermatology",
     description: "Holistic skin health focusing on acne, pigmentation, and advanced laser resurfacing using gold-standard technology.",
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2670&auto=format&fit=crop", // Cream/Texture shot
+    image: aestheticDerma,
     tag: "Skin Health"
   },
   {
     title: "Advanced Hair Restoration",
     description: "State-of-the-art Bio-FUE transplants and GFC therapies designed for maximum density and natural growth.",
-    image: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2669&auto=format&fit=crop", // Healthy hair shot
+    image: hairRestore,
     tag: "Hair Sciences"
   }
 ];
@@ -27,13 +33,13 @@ export const DOCTORS: Doctor[] = [
     id: '1',
     name: 'Dr. Harish Prasad',
     role: 'Chief Dermatologist & Founder',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2670&auto=format&fit=crop' // Professional Male Doctor
+    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1000&auto=format&fit=crop' // Male Doctor
   },
   {
     id: '2',
     name: 'Dr. Tanuja Gowda',
     role: 'Aesthetic Physician',
-    image: 'https://images.unsplash.com/photo-1594824476969-51c44d7eed77?q=80&w=2670&auto=format&fit=crop' // Professional Female Doctor
+    image: 'https://images.unsplash.com/photo-1594824476969-51c44d7eed77?q=80&w=1000&auto=format&fit=crop' // Female Doctor
   }
 ];
 
@@ -42,28 +48,28 @@ export const TREATMENTS: TreatmentItem[] = [
     id: 'acne',
     title: 'Acne & Scar Revision',
     description: 'We go beyond surface treatment, addressing the root hormonal and bacterial causes. Our protocol includes MNRF and CO2 Fractional Laser for deep scar revision.',
-    image: 'https://images.unsplash.com/photo-1576426863848-c2185fc6e3c1?q=80&w=2670&auto=format&fit=crop', // Close up skin/laser
+    image: acneRevision,
     features: ['Root Cause Analysis', 'MNRF Treatment', 'Chemical Peels', 'Laser Resurfacing']
   },
   {
     id: 'hair',
     title: 'Hair Transplantation',
     description: 'Restoring confidence with high-density, natural-looking hairlines using minimally invasive Bio-FUE techniques.',
-    image: 'https://images.unsplash.com/photo-1634547902360-646876c12c44?q=80&w=2670&auto=format&fit=crop', // Scalp analysis/hair
+    image: hairTransplant,
     features: ['Bio-FUE Transplant', 'GFC / PRP Therapy', 'Cyclical Medical Therapy', 'Scalp Micropigmentation']
   },
   {
     id: 'anti-aging',
     title: 'Anti-Aging & Fillers',
     description: 'Subtle, restorative enhancements that respect your natural anatomy. We focus on structural support rather than just volume.',
-    image: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2670&auto=format&fit=crop', // Facial treatment
+    image: fillers,
     features: ['Juvederm / Restylane', 'Botox / Dysport', 'HIFU Lifting', 'Profhilo Bioremodeling']
   },
   {
     id: 'laser',
     title: 'Laser Hair Reduction',
     description: 'The gold standard in permanent hair reduction using US FDA-approved Diode and Alexandrite lasers, safe for Indian skin tones.',
-    image: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=2670&auto=format&fit=crop', // Laser machine/treatment
+    image: laserReduce,
     features: ['Triple Wavelength Laser', 'Pain-Free Technology', 'Full Body Plans', 'Safe for Tan Skin']
   }
 ];

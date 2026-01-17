@@ -7,17 +7,17 @@ export const Intro: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto gap-12">
           <div className="w-full">
-             <Reveal width="100%">
-               <div className="flex flex-col items-center gap-4 mb-6">
-                  <div className="w-12 h-[1px] bg-obsidian"></div>
-                  <span className="font-sans text-xs tracking-[0.2em] uppercase font-medium">The Vitals Approach</span>
-               </div>
-               <h3 className="font-display text-4xl md:text-5xl leading-tight">
-                 Results driven by <span className="italic text-gold">Evidence</span>.
-               </h3>
-             </Reveal>
+            <Reveal width="100%">
+              <div className="flex flex-col items-center gap-6 mb-8">
+                <div className="w-20 h-[1.5px] bg-obsidian/30"></div>
+                <span className="font-sans text-sm tracking-[0.3em] uppercase font-semibold text-obsidian/60">The Vitals Approach</span>
+              </div>
+              <h3 className="font-display text-5xl md:text-6xl lg:text-7xl leading-tight text-balance">
+                Results driven by <span className="italic text-gold font-light">Evidence</span>.
+              </h3>
+            </Reveal>
           </div>
-          
+
           <div className="w-full">
             <Reveal delay={0.2} width="100%">
               <p className="font-serif text-3xl md:text-4xl lg:text-5xl leading-[1.2] font-light text-obsidian mb-12">
@@ -27,7 +27,7 @@ export const Intro: React.FC = () => {
             <Reveal delay={0.3} width="100%">
               <div className="max-w-2xl mx-auto font-sans text-sm md:text-base leading-relaxed text-obsidian/70">
                 <p className="mb-6">
-                   Led by Dr. Harish Prasad, our team emphasizes root-cause analysis over quick fixes. Whether it's advanced hair restoration or corrective skincare, we engineer results that are both visible and sustainable.
+                  Led by Dr. Harish Prasad, our team emphasizes root-cause analysis over quick fixes. Whether it's advanced hair restoration or corrective skincare, we engineer results that are both visible and sustainable.
                 </p>
                 <p>
                   Located in the heart of Bangalore, Vitals Klinic offers a sanctuary where medical expertise ensures safety, and artistic vision delivers harmony.
