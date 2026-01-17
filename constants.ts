@@ -7,10 +7,31 @@ import fillers from './components/ASSETS/HERO/fillers.jpg';
 import laserReduce from './components/ASSETS/HERO/laserreduce.jpg';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Treatments', href: '#treatments' },
-  { label: 'Experts', href: '#experts' },
-  { label: 'Results', href: '#gallery' },
-  { label: 'Contact', href: '#footer' },
+  {
+    label: 'Home',
+    href: '/'
+  },
+  {
+    label: 'About Us',
+    href: '#about',
+    children: [
+      { label: 'Our Team', href: '#experts' },
+      { label: 'Our Infrastructure', href: '#infrastructure' }, // Placeholder href
+      { label: 'Why Vitals Klinic', href: '#why-us' } // Placeholder href
+    ]
+  },
+  {
+    label: 'Our Services',
+    href: '#treatments',
+    children: [
+      { label: 'Hair Care', href: '#hair-care' },
+      { label: 'Skincare', href: '#skincare' },
+      { label: 'Anti Aging', href: '#anti-aging' },
+      { label: 'Dermato Surgeries', href: '#surgeries' }
+    ]
+  },
+  { label: 'Journal', href: '/blog' },
+  { label: 'Contact Us', href: '#footer' },
 ];
 
 export const SPECIALIZATIONS = [

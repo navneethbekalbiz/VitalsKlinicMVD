@@ -3,14 +3,17 @@ import { motion } from 'framer-motion';
 import { Reveal } from './Reveal';
 import { ArrowUpRight } from 'lucide-react';
 import heroVideo from './ASSETS/HERO/VitalKlinic_HEROVIDEO.mp4';
+import { QuizModal } from './QuizModal';
 
 export const Hero: React.FC = () => {
+  const [isQuizOpen, setIsQuizOpen] = React.useState(false);
+
   const handleBook = () => {
     window.open("https://calendly.com/d/crvm-84g-rp3", '_blank');
   };
 
   return (
-    <section className="relative h-[100dvh] w-full bg-sand overflow-hidden pt-24 pb-8 md:pb-20 flex flex-col justify-end">
+    <section className="relative h-[100dvh] w-full bg-sand overflow-hidden pt-32 md:pt-40 pb-8 md:pb-20 flex flex-col justify-end">
 
       {/* Central Model Image - Styled as an Arch Window */}
       <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
@@ -45,7 +48,7 @@ export const Hero: React.FC = () => {
           {/* Headline - Left Aligned */}
           <div className="w-full md:w-1/2 relative z-10 text-left">
             <Reveal width="100%">
-              <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tight text-obsidian drop-shadow-sm text-left">
+              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl leading-[1.1] tracking-tight text-obsidian drop-shadow-sm text-left mb-4 md:mb-0">
                 Science-Backed <br />
                 <span className="italic text-gold">Artistry</span>
               </h1>
@@ -69,7 +72,10 @@ export const Hero: React.FC = () => {
                   Book a consultation
                   <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </button>
-                <button className="px-8 py-4 bg-white text-obsidian rounded-full font-sans text-sm font-semibold tracking-wide hover:bg-gray-50 transition-all duration-300 shadow-md">
+                <button
+                  onClick={() => setIsQuizOpen(true)}
+                  className="px-8 py-4 bg-white text-obsidian rounded-full font-sans text-sm font-semibold tracking-wide hover:bg-gray-50 transition-all duration-300 shadow-md"
+                >
                   Take the skin quiz
                 </button>
               </div>
@@ -78,6 +84,8 @@ export const Hero: React.FC = () => {
 
         </div>
       </div>
+
+      <QuizModal isOpen={isQuizOpen} onClose={() => setIsQuizOpen(false)} />
     </section>
   );
 };

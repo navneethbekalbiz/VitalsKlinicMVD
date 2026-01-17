@@ -80,7 +80,7 @@ export const Gallery: React.FC = () => {
   ));
 
   return (
-    <section id="gallery" className="py-24 md:py-36 bg-sand overflow-hidden">
+    <section id="gallery" className="py-24 md:py-36 bg-transparent overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 mb-8">
         <Reveal width="100%">
           <div className="flex flex-col items-center text-center w-full">

@@ -35,7 +35,7 @@ export const Experts: React.FC = () => {
   ));
 
   return (
-    <section id="experts" className="py-24 md:py-36 bg-sand relative overflow-hidden">
+    <section id="experts" className="py-24 md:py-36 bg-transparent relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 mb-8">
         <Reveal width="100%">
           <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">

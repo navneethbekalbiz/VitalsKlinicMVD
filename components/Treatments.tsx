@@ -87,11 +87,11 @@ export const Treatments: React.FC = () => {
                     <h4 className="font-sans text-xs tracking-widest uppercase text-obsidian mb-6 opacity-50 text-left">Included Steps</h4>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4 max-w-lg">
                       {activeTab.features.map((feature, i) => (
-                        <li key={i} className="flex items-start font-sans text-sm text-obsidian/80">
-                          <span className="w-5 h-5 rounded-full bg-gold/10 flex items-center justify-center text-gold mr-3 mt-0.5 shrink-0">
+                        <li key={i} className="flex items-start font-sans text-sm text-obsidian/80 group">
+                          <span className="w-5 h-5 rounded-full bg-gold/10 flex items-center justify-center text-gold mr-3 mt-0.5 shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:bg-gold group-hover:text-white">
                             <Check size={10} />
                           </span>
-                          <span className="text-left">{feature}</span>
+                          <span className="text-left group-hover:text-obsidian transition-colors duration-300">{feature}</span>
                         </li>
                       ))}
                     </ul>

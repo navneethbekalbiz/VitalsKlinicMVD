@@ -14,9 +14,9 @@ export const Testimonials: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-cream flex flex-col items-center">
+    <section className="py-24 bg-transparent flex flex-col items-center relative z-10">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col items-center text-center relative z-10 w-full px-4">
+        <div className="flex flex-col items-center text-center relative z-10 w-full px-4 glass-panel p-12 md:p-20 rounded-[3rem] shadow-soft-xl max-w-5xl mx-auto">
           <div className="mb-12 text-gold opacity-80 relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-gold/10 rounded-full blur-3xl -z-10"></div>
             <Quote size={64} fill="currentColor" className="drop-shadow-lg" />

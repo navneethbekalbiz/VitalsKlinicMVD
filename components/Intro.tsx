@@ -3,7 +3,7 @@ import { Reveal } from './Reveal';
 
 export const Intro: React.FC = () => {
   return (
-    <section className="py-32 md:py-48 bg-sand border-t border-obsidian/5">
+    <section className="py-32 md:py-48 bg-transparent border-t border-obsidian/5">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto gap-12">
           <div className="w-full">

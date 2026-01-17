@@ -273,7 +273,7 @@ export const Card = ({
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
         className={cn(
-          "group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900",
+          "group relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900 shadow-soft-xl transition-shadow duration-500 hover:shadow-2xl border border-white/50",
           clickable ? "cursor-pointer" : "cursor-default"
         )}
       >
